@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="partyup.css">
 	<link rel="icon" href="images/favicon.png">
     <title>PartyUP App - Support</title>	
@@ -10,43 +11,42 @@
   
   <body>
 	<h1>Welcome to PartyUP</h1>  
-	<p>PartyUP is a nightlife application that allows you to share short, ephemeral videos demonstrating the atmosphere at the venue you are visiting.  If you want to plan your next party stop, you can view the videos submitted by other party animals at venues in your area to make an informed choice.  Videos submitted to PartyUP are between 5 and 10 seconds long and may include a note from the submitter providing details about the atmosphere at the venue.  A video is linked to the venue from which it was submitted, usually a bar or nightlife spot.</p> 
+	<p>PartyUP is a nightlife application that allows you to share short, ephemeral videos demonstrating the atmosphere at the venue you are visiting.  If you want to find your next party stop, you can view the videos submitted by other party animals at venues in your area to make an informed choice.  Videos submitted to PartyUP are between 5 and 10 seconds long and may include a note from the submitter providing details about the atmosphere at the venue.  A video is linked to the venue from which it was submitted, usually a bar or nightlife spot.</p> 
 	<p>If you aren't out partying just yet, you can share a video on the pregame feed of the city you are in.  This allows you to share your plans with other party people in your area.  You also have the option of looking at the videos from other cities if you think those cities offer fun you are willing to travel for.</p>
 	
-	<h2>Venue Browsing</h2>
-	<p>The venue list is the hub of of the PartyUP experience.  From here you will initiate the two primary activities PartyUP has been created for: 1) submitting videos and 2) viewing the videos submitted by others.</p>
-	<image src="images/Venues.png"/>
-	<dl>
-		<dt>1. Party Place Picker</dt>
-		<dd>Select a sticky city whose venues will be displayed in the venue list.  Current Location uses your location to determine the city you are in.  The available sticky cities are currently determined by the PartyUP development team.</dd>
-		<dt>2. About</dt>
-		<dd>Peruse documentation and acknowledgements.</dd>
-		<dt>3. Submit Video</dt>
-		<dd>Initiate the process of submitting a video.</dd>
-		<dt>4. Venue Filter</dt>
-		<dd>Filter the list of venues down to those containing the string you enter here.  The All Parties Videos feed will be filtered down to those videos recorded at the venues allowed by the filter.  The Pregame Videos feed is unaffected by the filter.</dd>
-		<dt>5. Local Videos</dt>
-		<dd></dd>
-		<dt>6. Venue Listing</dt>
-		<dd>Select a venue to see videos recorded there.</dd>
-		<dt>7. Loading Status</dt>
-		<dd></dd>
-	</dl>
+	<h2>City Hub</h2>
+	<p>The city hub is the center of the PartyUP experience.  The two primary activities of PartyUP, submitting and viewing videos, are initiated from here.  Your location is used to display the content from your area by default, though you can see content from other cities by selecting a city in the <em>Party Place Picker</em>.  To limit data usage, PartyUP does not poll for the freshest data on a regular basis, allowing you to refresh the  data on demand using pull to refresh.</p>
+	<div class="screen_desciption">
+		<image src="images/Venues.png"/>
+		<details><summary>1. Party Place Picker</summary><p>Select a sticky city whose content will be displayed in the venue list.  <em>Current Location</em> uses your location to determine the city you are in and shows content for that city.  The available sticky cities are currently determined by the PartyUP development team.</p></details>
+		<details><summary>2. About</summary><p>Peruse documentation and acknowledgements.  You can also share and rate PartyUP</p></details>
+		<details><summary>3. Submit Video</summary><p>Initiate the process of submitting a video by bringing up the <em>Recording</em> popover.</p></details>
+		<details><summary>4. Venue Filter</summary><p>Filter the list of venues to those containing the string you enter here.  The <em>All Parties Videos</em> feed will be filtered down to those videos recorded at the venues netted by the filter.  The <em>Pregame Videos</em> feed is unaffected by the filter.</p></details>
+		<details><summary>5. Local Videos</summary>
+			<ul>
+				<li><b>All Party Videos</b> view videos from all of the venues in the city.  Pregame videos are not included in this feed.</li>
+				<li><b>Pregame Party Videos</b> view videos that are linked to the city rather than a particular venue.  See where others in the city plan to party.</li>
+			</ul>
+		</details>
+		<details><summary>6. Venue Listing</summary><p>Select a venue to see videos recorded there.</p></details>
+		<details><summary>7. Loading Status</summary><p>PartyUP displays <em>searching</em> and an indeterminate progress indicator in this area while it is fetching the list of nearby venues.</p></details>
+	</div>
 	
 	<h2>Video Submission</h2>
-	<h3>Recording</h3>
+	<p>PartyUP uses location services to compile a list of candidate venues you may be attending.  You will not be allowed to begin recording a video until your location has been roughly determined.  Submitting a video involves <a href="#Recording"> recording</a> a video and then <a href="#Submitting">submitting</a> the video.</p>
+	<h3 id="Recording">Recording</h3>
 	<image src="images/Recording.png"/>
 		<dl>
-		<dt>1. Cancel</dt>
+		<details><summary>1. Cancel</summary><p>
 		<dd>Return to the venue list without submitting a video.  Available even while the determining location box is present.</dd>
-		<dt>2. Camera Toggle</dt>
+		<details><summary>2. Camera Toggle</summary><p>
 		<dd>Toggle between the rear and front cameras.</dd>
-		<dt>3. Viewfinder</dt>
+		<details><summary>3. Viewfinder</summary><p>
 		<dd>See what your camera is seeing.</dd>
-		<dt>4. Record </dt>
+		<details><summary>4. Record</summary><p>
 		<dd>Hold to record a video.  Disabled while your location is being determined.  The progress ring changes color from pink to yellow when the minimum video length has been recorded.</dd>
 	</dl>
-	<h3>Submitting</h3>
+	<h3 id="Submitting">Submitting</h3>
 	<image src="images/Submitting.png"/>
 		<dl>
 		<dt>1. Party Place Picker</dt>
@@ -69,6 +69,10 @@
 	<image src="images/Viewing.png"/>
 	<h3></h3>
 	<h2>About</h2>
-	<image src="images/About.png"/>
+	<div class="screen_desciption">
+		<image src="images/About.png"/>
+		<details><summary>1. Dismiss</summary><p>Close the About popover, return to the City Hub</p></details>
+		<details><summary>2. Version</summary><p>The version of PartyUP you are using.  You may be asked for this in the event you ask for support and providing the version along with any feedback would be a great help to the developers.</p></details>
+	</div>
   </body>
 </html>
