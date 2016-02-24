@@ -10,3 +10,7 @@ body {
 	font-family: "Trebuchet MS";
 	margin: 5px 10px;
 }
+
+.screen_description p{
+	margin: 5px 80px
+}
