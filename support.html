@@ -10,14 +10,15 @@
   </head>
   
   <body>
-	<h1>Welcome to PartyUP</h1>  
-	<p>PartyUP is a nightlife application that allows you to share short, ephemeral videos demonstrating the atmosphere at the venue you are visiting.  If you want to find your next party stop, you can view the videos submitted by other party animals at venues in your area to make an informed choice.  Videos submitted to PartyUP are between 5 and 10 seconds long and may include a note from the submitter providing details about the atmosphere at the venue.  A video is linked to the venue from which it was submitted, usually a bar or nightlife spot.</p> 
-	<p>If you aren't out partying just yet, you can share a video on the pregame feed of the city you are in.  This allows you to share your plans with other party people in your area.  You also have the option of looking at the videos from other cities if you think those cities offer fun you are willing to travel for.</p>
-	
-	<h2 id="CityHub">City Hub</h2>
-	<p>The city hub is the center of the PartyUP experience.  The two primary activities of PartyUP, submitting and viewing videos, are initiated from here.  Your location is used to display the content from your area by default, though you can see content from other cities by selecting a city in the <em>Party Place Picker</em>.  To limit data usage, PartyUP does not poll for the freshest data on a regular basis.  You refresh the data on demand by using pull to refresh.</p>
-	<image src="images/Venues.png"/>
-	<div class="screen_description">
+  	<div id="Welcoming">
+		<h1>Welcome to PartyUP</h1>  
+		<p>PartyUP is a nightlife application that allows you to share short, ephemeral videos demonstrating the atmosphere at the venue you are visiting.  If you want to find your next party stop, you can view the videos submitted by other party animals at venues in your area to make an informed choice.  Videos submitted to PartyUP are between 5 and 10 seconds long and may include a note from the submitter providing details about the atmosphere at the venue.  A video is linked to the venue from which it was submitted, usually a bar or nightlife spot.</p> 
+		<p>If you aren't out partying just yet, you can share a video on the pregame feed of the city you are in.  This allows you to share your plans with other party people in your area.  You also have the option of looking at the videos from other cities if you think those cities offer fun you are willing to travel for.</p>
+	</div>	
+	<div id="Hubbing"> 
+		<h2 id="CityHub">City Hub</h2>
+		<p>The city hub is the center of the PartyUP experience.  The two primary activities of PartyUP, submitting and viewing videos, are initiated from here.  Your location is used to display the content from your area by default, though you can see content from other cities by selecting a city in the <em>Party Place Picker</em>.  To limit data usage, PartyUP does not poll for the freshest data on a regular basis.  You refresh the data on demand by using pull to refresh.</p>
+		<image src="images/Venues.png"/>
 		<details><summary>1. Party Place Picker</summary><p>Select a sticky city whose content will be displayed in the city hub.  <em>Current Location</em> uses your location to determine the city you are in and shows content for that city.  The available sticky cities are currently curated by the PartyUP development team.</p></details>
 		<details><summary>2. About</summary><p>Peruse documentation and acknowledgements.  You can also share and rate PartyUP.</p></details>
 		<details><summary>3. Submit Video</summary><p>Initiate the process of submitting a video by bringing up the <a href="#Recording">Recording</a> popover.</p></details>
@@ -37,37 +38,56 @@
 			<li>🔥 - >5 videos</li>
 		</ul>
 	</div>
-	
-	<h2>Video Submission</h2>
-	<p>PartyUP uses location services to compile a list of candidate venues you may be attending.  You will not be allowed to begin recording a video until your location has been roughly determined.  Submitting a video involves <a href="#Recording">recording</a> a video and then <a href="#Submitting">submitting</a> the video.</p>
-	<h3 id="Recording">Recording</h3>
-	<p>Begin the submission process by recording a video that is between 5 and 10 seconds long.  Videos are more expressive of the atmosphere at the venue than photos, so PartyUP only allows submission of videos.</p>
-	<image src="images/Recording.png"/>
-	<div class="screen_description">
-		<details><summary>1. Cancel</summary><p>Return to the <a href="#CityHub">city hub</a> without submitting a video.  Available even while the determining location heads up display is present.</p></details>
-		<details><summary>2. Camera Toggle</summary><p>Toggle between the rear and front cameras.</p></details>
-		<details><summary>3. Viewfinder</summary><p>See what your camera is seeing.</p></details>
-		<details><summary>4. Record</summary><p>Press and hold to record a video.  Disabled while your location is being determined.  The progress ring changes color from <span style="color:rgb(237,5,138)">pink</span> to <span style="color:rgb(250,168,66)">yellow</span> when the minimum video duration has been recorded.  When the progress ring is full or you release the button after having recorded at least five seconds, PartyUP stops the recording and moves on to <a href="#Submitting">submitting</a> the video.  If you release the record button before five seconds have been recorded, the video is discarded and you may begin recording another video.</p></details>
+	<div id="Baking">
+		<h2>Video Submission</h2>
+		<p>PartyUP uses location services to compile a list of candidate venues you may be attending.  You will not be allowed to begin recording a video until your location has been roughly determined.  Submitting a video involves <a href="#Recording">recording</a> a video and then <a href="#Submitting">submitting</a> the video.</p>
+		<div id="Recorder">
+			<h3 id="Recording">Recording</h3>
+			<p>Begin the submission process by recording a video that is between 5 and 10 seconds long.  Videos are more expressive of the atmosphere at the venue than photos, so PartyUP only allows submission of videos.</p>
+			<image src="images/Recording.png"/>
+			<details><summary>1. Cancel</summary><p>Return to the <a href="#CityHub">city hub</a> without submitting a video.  Available even while the determining location heads up display is present.</p></details>
+			<details><summary>2. Camera Toggle</summary><p>Toggle between the rear and front cameras.</p></details>
+			<details><summary>3. Viewfinder</summary><p>See what your camera is seeing.</p></details>
+			<details><summary>4. Record</summary><p>Press and hold to record a video.  Disabled while your location is being determined.  The progress ring changes color from <span style="color:rgb(237,5,138)">pink</span> to <span style="color:rgb(250,168,66)">yellow</span> when the minimum video duration has been recorded.  When the progress ring is full or you release the button after having recorded at least five seconds, PartyUP stops the recording and moves on to <a href="#Submitting">submitting</a> the video.  If you release the record button before five seconds have been recorded, the video is discarded and you may begin recording another video.</p></details>
+		</div>
+		<div id="Submitter">
+			<h3 id="Submitting">Submitting</h3>
+			<p>Having <a href="#Recording">recorded</a> your video, you may now share it with other PartyUP users by submitting it.  You have the option of adding a comment describing the fun you are having and you may tweak the venue you are submitting from if we didn't get it quite right using location services.</p>
+			<image src="images/Submitting.png"/>
+			<details><summary>1. Cancel</summary><p>Return to the <a href="#Recording">recording</a> step, discarding the current video.</p></details>
+			<details><summary>2. Submit</summary><p>Share the video with other PartyUp users.</p></details>
+			<details><summary>3. Comment</summary><p>Describe the atmosphere at the venue, note the deals, and say hello.  The comment will be displayed in the <a href="#Viewing">viewing pages</a> along with the video.</p></details>
+			<details><summary>4. Venue Picker</summary><p>PartyUP makes a guess about the venue you are visiting using your location, but you can override the guess by choosing from a list of nearby venues.  The pregame feed for the city you are in will always be present at the end of the list.</p></details>
+			<details><summary>5. Video Preview</summary><p>The video being submitted is played here on a loop for you to review.</p></details>
+		</div>
 	</div>
-	<h3 id="Submitting">Submitting</h3>
-	<p>Having recorded your video, you may now share it with other PartyUP users by submitting it.  You have the option of adding a comment describing the fun you are having and you may tweak the venue you are submitting from if we didn't get it quite right using location services.</p>
-	<image src="images/Submitting.png"/>
-	<div class="screen_description">
-		<details><summary>1. Cancel</summary><p>Return to the <a href="#Recording">recording</a> step, discarding the current video.</p></details>
-		<details><summary>2. Submit</summary><p>Share the video with other PartyUp users.</p></details>
-		<details><summary>3. Comment</summary><p>Describe the atmosphere at the venue or the fun you are having.  The comment will be displayed in the <a href="#Viewing">viewing pages</a> along with the video.</p></details>
-		<details><summary>4. Venue Picker</summary><p>PartyUP makes a guess about the venue you are at using your location, but you can override the guess by choosing for a list of nearby venues.  The pregame feed for the city you are in will always be present at the end of the list.</p></details>
-		<details><summary>5. Video Preview</summary><p>The video being submitted is played here on a loop for you to review.</p></details>
+	<div id="Tasting">
+		<h2 id="Viewing">Video Feed</h2>
+		<p>Having selected a feed in the <a href="#CityHub">city hub</a>, you flip through the pages to determine which party is primed for your attendance.  Each page shows you a video and comment submitted by a fellow partier.  Flip through the pages by swiping left or right.  The fresher the video the earlier it appears in the feed. While you are flipping through the feed, newly submitted videos are not inserted. You will have to leave and return to the feed to see new videos.</p> 
+		<h3 id="VideoPage">Video Page</h3>
+		<p>See a video submitted by a fellow partier.  You can help keep the feed healthy and helpful by voting videos up or down, sharing the video with friends, or reporting the video as inappropriate.</p>
+		<image src="images/Viewing.png"/>
+		<details><summary>1. Back</summary><p>Return to the <a href="#CityHub">city hub</a>.</p></details>
+		<details><summary>2. Venue Label</summary><p>Name of the venue from which the video was submitted.</p></details>
+		<details><summary>3. Video</summary><p>What you have come to see, a video submitted by a fellow partier.  The video playback loops repeatedly.  There is a progress indicator showing how far through the video you are in the top right corner.</p></details>
+		<details><summary>4. Timestamp</summary><p>Indicates when the video was submitted. Clicking on the time toggles between relative and short date and time formats.</p></details>
+		<details><summary>5. Vote</summary><p></p></details>
+		<details><summary>6. Communicate</summary><p></p></details>
+		<details><summary>7. Comment</summary><p>A few words from the partier who submitted the video. The comment is scrollable if it is a long one.</p></details>
+		<details><summary>8. Flip Page</summary><p>If you are too uncoordinated to swipe through pages, use these handy back and forward buttons to flip through video pages instead.</p></details>
+		<h3 id="SharePage">Share Page</h3>
+		<image src="images/Sharing.png"/>
 	</div>
-	<h2 id="Viewing">Video Viewing</h2>
-	<h3></h3>
-	<image src="images/Viewing.png"/>
-	<h3></h3>
-	<h2 id="About">About</h2>
-	<div class="screen_description">
+	<div id="Abouting">
+		<h2 id="About">About</h2>
+		<p>Learn about PartyUP, who contributed to it and how it works.  You can share PartyUP with your friends here too.</p>
 		<image src="images/About.png"/>
 		<details><summary>1. Done</summary><p>Return to the <a href="#CityHub">City Hub</a></p></details>
 		<details><summary>2. Version</summary><p>Indicates the version of PartyUP you are using.  If you ask for support or provide feedback, you will be asked for this valuable piece of information.</p></details>
+		<details><summary>3. Share and Review</summary><p>Share PartyUP with friends of Facebook or Twitter.  Rate PartyUP on the App Store.  PartyUP becomes more useful with each additional partier using it.</p></details>
+		<details><summary>4. Support</summary><p>Need some help?  You are reading the PartyUP documentation, there are also links to the tutorial, <a href="terms.html">terms of service</a>, and <a href="privacy.html">privacy policy</a> in this section.  You may wish to provide us feedback via the <a href="https://www.surveymonkey.com/r/782PT5P">Feedback</a> link also in this section.</p></details>
+	</div>
+	<div id="Beta">
 	</div>
   </body>
 </html>

@@ -7,7 +7,7 @@ body {
 	margin: 5px 10px;
 }
 
-.screen_description p ul ol {
+details p ul ol {
 	font-size: 90%;
 	margin-left: 10px;
 }
