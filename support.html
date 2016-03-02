@@ -21,16 +21,16 @@
 		<image src="images/Venues.png"/>
 		<details><summary>1. Party Place Picker</summary><p>Select a sticky city whose content will be displayed in the city hub.  <em>Current Location</em> uses your location to determine the city you are in and shows content for that city.  The available sticky cities are currently curated by the PartyUP development team.</p></details>
 		<details><summary>2. About</summary><p>Peruse documentation and acknowledgements.  You can also share and rate PartyUP.</p></details>
-		<details><summary>3. Submit Video</summary><p>Initiate the process of submitting a video by bringing up the <a href="#Recording">Recording</a> popover.</p></details>
+		<details><summary>3. Submit Video</summary><p>Initiate the process of submitting a video by bringing up the <a href="#Recording">recording</a> popover.</p></details>
 		<details><summary>4. Venue Filter</summary><p>Filter the list of venues to those containing the string you enter here.  The <em>All Parties Videos</em> feed will be filtered down to those videos recorded at the venues netted by the filter.  The <em>Pregame Videos</em> feed is unaffected by the filter.</p></details>
-		<details><summary>5. Local Videos</summary><p>Two special cells are displayed at the top of the city hub, the All Party Videos and Pregame Party Videos cells.  These number of videos available in the feed is indicated by the <a href="#Vitality">vitality icon</a> to the left of the cell.  The number of videos available and the amount of time since the last video was submitted are indicated below the cell label.</p>			
+		<details><summary>5. Local Videos</summary><p>Two special cells are displayed at the top of the city hub, the <em>All Party Videos</em> and <em>Pregame Party Videos</em> cells.  The number of videos available in the feed is symbolized by the <a href="#Vitality">vitality icon</a> to the left of the cell.  The number of videos available and the amount of time since the last video was submitted are indicated below the cell label.</p>			
 		<ul>
 				<li><b>All Party Videos</b> view videos from all of the venues in the city.  Pregame videos are not included in this feed.</li>
 				<li><b>Pregame Party Videos</b> view videos that are linked to the selected city rather than a particular venue.  See where others in the city plan to party.</li>
 			</ul>
 		</details>
-		<details><summary>6. Venue Listing</summary><p>Select a venue to see videos recorded there as a series of <a href="#Viewing">viewing</a> pages.  A pale yellow background indicates a promoted venue.  A promotional message may be displayed below the venue name indicating a deal or event.  The number of videos available for a venue is indicated by the vitality icon at the left of the cell.  Below the <a href="#Vitality">vitality</a> icon is an indication of the amount of time since the last video was submitted for the venue.</p></details>
-		<details><summary>7. Loading Status</summary><p>PartyUP displays <em>searching</em> and an indeterminate progress indicator in this area while it is fetching the list of nearby venues.</p></details>
+		<details><summary>6. Venue Listing</summary><p>Select a venue to see videos recorded there as a series of <a href="#Viewing">viewing</a> pages.  A pale yellow background indicates a promoted venue.  A promotional message may be displayed below the venue name indicating a deal or special event.  The number of videos available for a venue is indicated by the <a href="#Vitality">vitality</a> icon at the left of the cell.  Below the vitality icon is an indication of the amount of time since the last video was submitted from the venue.</p></details>
+		<details><summary>7. Loading Status</summary><p>PartyUP displays <em>searching</em> and an indeterminate progress indicator in this area while it is fetching the list of venues in the selected city.</p></details>
 		<h5 id="Vitality">Vitality Icon Legend:</h5>
 		<ul>
 			<li>🎈 - 0 videos</li>
@@ -40,7 +40,9 @@
 	</div>
 	<div id="Baking">
 		<h2>Video Submission</h2>
-		<p>PartyUP uses location services to compile a list of candidate venues you may be attending.  You will not be allowed to begin recording a video until your location has been roughly determined.  Submitting a video involves <a href="#Recording">recording</a> a video and then <a href="#Submitting">submitting</a> the video.</p><p>Videos can't be recorded and submitted until you have agreed to the PartyUP <a href="terms.html">Terms of Service</a>.  Until you have agreed to the terms, attempting to record a video will bring up an alert summarizing some of the rules of conduct and allowing options for reading the full terms and accepting the terms.</p>
+		<p>PartyUP uses location services to compile a list of candidate venues you may be attending.  You will not be allowed to begin recording a video until your location has been roughly determined.  Submitting a video involves <a href="#Recording">recording</a> a video and then <a href="#Submitting">submitting</a> the video.</p>
+		<p>Videos can't be recorded and submitted until you have agreed to the PartyUP <a href="terms.html">Terms of Service</a>. Until you have agreed to the terms, attempting to record a video will bring up an alert summarizing some of the rules of conduct and allowing options for reading the full terms and accepting the terms.</p>
+		<p>Exciting stuff happens while you are out partying and you need to be ready to capture them quickly.  PartyUP facilitates this by automatically activating the <a href="#Baking">video recording</a> feature whenever the application moves to the foreground.  This feature can be disabled via the <a href="#Setting">settings</a>.</p> 
 		<div id="Recorder">
 			<h3 id="Recording">Recording</h3>
 			<p>Begin the submission process by recording a video that is between 5 and 10 seconds long.  Videos are more expressive of the atmosphere at the venue than photos, so PartyUP only allows submission of videos.</p>
@@ -69,9 +71,9 @@
 		<image src="images/Viewing.png"/>
 		<details><summary>1. Back</summary><p>Return to the <a href="#CityHub">city hub</a>.</p></details>
 		<details><summary>2. Venue Label</summary><p>Name of the venue from which the video was submitted.</p></details>
-		<details><summary>3. Video</summary><p>What you have come to see, a video submitted by a partier in the field.  The video loops repeatedly.  There is a progress indicator showing how far through the video you are in the top right corner.</p></details>
+		<details><summary>3. Video</summary><p>What you have come to see, a video submitted by a partier in the field.  The playback loops repeatedly.  There is a progress indicator showing how far through the playback you are in the top right corner.</p></details>
 		<details><summary>4. Timestamp</summary><p>Indicates when the video was submitted. Clicking on the time toggles between relative and short date and time formats.</p></details>
-		<details><summary>5. Vote</summary><p>Use the up and down arrows to vote the video up or down.  You get only one vote per video and the vote you have placed is reflected by a grey star appearing behind the appropriate arrow. You can change your vote by tapping the other arrow.  Tapping the arrow with the star will toggle the vote off (making your vote a meh).  The rating of the video appears between the arrows and is determined by subtracting the down from the up votes submitted by users.  If a video's rating hits -5, it is removed from the feed.</p></details>
+		<details><summary>5. Vote</summary><p>Use the up and down arrows to vote the video up or down.  You get one vote per video and the vote you have placed is indicated by a grey star behind the appropriate arrow. You can change your vote by tapping the other arrow.  Tapping the arrow with the star will toggle the vote off (making your vote a meh).  The rating of the video appears between the arrows and is determined by subtracting the down from the up votes submitted by users.  If a video's rating hits -5, it is removed from the feed.</p></details>
 		<details><summary>6. Share Dots</summary><p>These dots are a gateway to sharing or reporting videos.  A video can be shared via Twitter and Facebook by choosing the appropriate service from the action sheet that tapping the dots brings up.  Choosing the <em>Report Offensive Content</em> option brings up an <em>Offensive Material</em> alert panel with two options:</p>
 			<ul>
 				<li><b>Report Offensive Video</b> flags the video as inappropriate on the PartyUP service.  The video will immediately be removed from your feed, though other users will continue to see it until the threshold of flags submitted has been reached.</li>
@@ -95,7 +97,32 @@
 		<details><summary>3. Share and Review</summary><p>Share PartyUP with friends on Facebook or Twitter.  Rate PartyUP on the App Store.  PartyUP becomes more useful with each additional party mammal using it.</p></details>
 		<details><summary>4. Support</summary><p>Need some help?  You are reading the PartyUP documentation, there are also links to the tutorial, <a href="terms.html">terms of service</a>, and <a href="privacy.html">privacy policy</a> in this section.  You may wish to provide us feedback via the <a href="https://www.surveymonkey.com/r/782PT5P">Feedback</a> link also in this section.</p></details>
 	</div>
+	<div id="Setting">
+		<h2>Settings</h2>
+		<p>PartyUP provides two user facing settings available through the iOS Settings app:</p>
+		<ul>
+			<li><b>Jump To Camera</b> by default the <a href="#Baking">submit video</a> pops up when PartyUP becomes the foreground application. This setting allows you to control that behaviour.</li>
+			<li><b>Show Tutorial</b> the tutorial pages that come up when PartyUP is started for the first time can be set to come up again on the next PartyUP startup using this setting.  This setting is not sticky; after the tutorial comes up this setting goes back to off.</li>
+		</ul>
+		<p>A number of system services are used by PartyUP including location services, the camera and microphone, local notifications, and cellular data.  On first startup, PartyUP requests access to these services via a series of alert panels.  If you deny access to a service and are not happy with the limitations this imposes on the use of the app, you can change PartyUP's access to these services via the PartyUP panel in the Settings app.</p>
+	<div id="Contacting">
+		<h2>Contact</h2>
+		<p>PartyUP is made and supported by <a href="http://sandcastleapps.com">Sandcastle Application Development</a>.  We hope this documentation has addressed your question or issue.  If not, please use the links below to contact us.</p>
+		<ul>
+			<li>Questions or issues can be directed to our <a href="mailto:todd@sandcastleapps.com">support email</a>.</li>
+			<li>Comments or feature requests can be directed to our <a href="https://www.surveymonkey.com/r/782PT5P">feedback page</a>.</li>
+		</ul>
+		<p>When submitting support requests or feedback, please let us know the <a href="#Abouting">version of PartyUP</a> you are using. If you have an issue, please also provide some details about the device you are running it on and the version of iOS you are using.</p>
+	</div>
+	<div id="Requiring">
+		<h2>System Requirements</h2>
+		<p>PartyUP is currently available for iOS devices including the iPhone and iPad running at least iOS 8.</p> 
+	</div>
 	<div id="Beta">
+		<h2>PartyUP Beta Program</h2>
+		<p>Do you have an eye for detail and a desire to help PartyUP be the best it can be?  The PartyUP Beta Program may be for you.  You will receive access to beta versions of PartyUP through the TestFlight external beta testing program.</p>
+		<p>By joining the program you accept that the beta software may have unstable or broken features.  You also agree to test the software and provide detailed feedback on issues you find.  By joining the beta program, you consent to having Sandcastle employees contact you for additional information about issues you have reported.</p>
+		<p>You can sign up for the beta program <a href="http://partyuptonight.us11.list-manage1.com/subscribe?u=69ad31d83cfbc680c726ac1a7&id=2bee011f98">here</a>.  You will be contacted with further instructions if you are accepted into the program.</p>
 	</div>
   </body>
 </html>
